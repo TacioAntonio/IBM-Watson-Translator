@@ -1,0 +1,64 @@
+.translateForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.translateForm__langugaeInputs {
+  display: flex;
+}
+
+.translateForm__langugaeInput {
+  background-color: #262626;
+  color: white;
+  flex-basis: 50%;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #6f6f6f;
+  cursor: pointer;
+}
+
+.translateForm__TextInputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.translateForm__TextInput {
+  background-color: #262626;
+  border: none;
+  box-shadow: inset 1px 1px 6px black;
+  flex-basis: 50%;
+  min-height: 150px;
+  max-height: 150px;
+  color: white;
+  font-size: 1em;
+  padding: 6px;
+}
+
+.translateForm__TextInput::placeholder {
+  padding: 6px 0 0 6px;
+}
+
+.translateForm__TextSubmit {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 12px;
+  background-color: #262626;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .translateForm__TextInputs {
+    flex-direction: row;
+  }
+
+  .translateForm {
+    max-width: 480px;
+  }
+}

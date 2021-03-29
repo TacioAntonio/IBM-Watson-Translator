@@ -1,0 +1,20 @@
+<form class="translateForm" [formGroup]="languagesForm" (ngSubmit)="onSubmit()">
+  <div class="translateForm__langugaeInputs">
+    <select class="translateForm__langugaeInput" formControlName="languageOf">
+      <option value="" disabled>Choose your language</option>
+      <option *ngFor="let currentLanguage of languages" [ngValue]="currentLanguage.language">
+        {{currentLanguage.language_name}}</option>
+    </select>
+    <select class="translateForm__langugaeInput" formControlName="languageTo">
+      <option value="" disabled>Choose your language</option>
+      <option *ngFor="let currentLanguage of languages" [ngValue]="currentLanguage.language">
+        {{currentLanguage.language_name}}</option>
+    </select>
+  </div>
+  <div class="translateForm__TextInputs">
+    <textarea class="translateForm__TextInput" placeholder="Enter text" formControlName="TextToTranslate"></textarea>
+    <textarea class="translateForm__TextInput" placeholder="Translation" readonly>{{translation}}</textarea>
+  </div>
+
+  <button class="translateForm__TextSubmit">Translate</button>
+</form>
