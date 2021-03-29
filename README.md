@@ -1,5 +1,5 @@
 #  Translator
-> A translator system made with Angular, Node.js and IBM Watson.
+> A translator system made with Angular, Node.js and IBM Watson
 
 ![languages](https://img.shields.io/badge/languages-4-blue) ![MIT](https://img.shields.io/badge/license-MIT-brightgreen)
 
